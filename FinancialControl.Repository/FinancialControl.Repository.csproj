@@ -4,4 +4,15 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repository\" />
+    <Folder Include="Contract\" />
+    <Folder Include="Context\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MapperExtensions\FinancialControl.MapperExtensions.csproj" />
+  </ItemGroup>
 </Project>

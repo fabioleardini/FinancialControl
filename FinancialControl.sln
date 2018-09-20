@@ -1,10 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialControl.App", "FinancialControl\FinancialControl.App.csproj", "{64FE7E3D-D9DC-4970-9916-200D1354459F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialControl.Business", "FinancialControl\FinancialControl.Business\FinancialControl.Business.csproj", "{29DD9F77-7934-4160-9689-AE6929D9DBD4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialControl.CrossCutting", "FinancialControl.CrossCutting\FinancialControl.CrossCutting.csproj", "{48DF228C-2FE3-4D68-A270-1BD5A8C80E78}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialControl.Domain", "FinancialControl.Domain\FinancialControl.Domain.csproj", "{A78A62E1-B423-46BC-88F1-76E0B35962C6}"
@@ -15,9 +11,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialControl.Log", "Fin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialControl.Repository", "FinancialControl.Repository\FinancialControl.Repository.csproj", "{CFA55325-7F7E-4EFB-A578-45A0E5887568}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialControl.Service", "FinancialControl.Service\FinancialControl.Service.csproj", "{E67B0E66-1D00-43A5-BA2B-9FF8A5E8FF6B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialControl.Test", "FinancialControl.Test\FinancialControl.Test.csproj", "{46AEFCD1-05D7-4A20-BB1B-61681F1648A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialControl.Business", "FinancialControl.Business\FinancialControl.Business.csproj", "{8427E657-3491-45BD-83E2-C24FE406C5D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialControl.Application", "FinancialControl.Application\FinancialControl.Application.csproj", "{515892BC-8CF8-4F62-ABC6-CEED8CA6DFDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialControl.MapperExtensions", "MapperExtensions\FinancialControl.MapperExtensions.csproj", "{CA7C7B4D-0D76-4606-8335-6C16806D0167}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialControl.Service", "FinancialControl.Service\FinancialControl.Service.csproj", "{E5A621EF-53A8-438B-98B0-61EDF8B73A7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +27,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{64FE7E3D-D9DC-4970-9916-200D1354459F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64FE7E3D-D9DC-4970-9916-200D1354459F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64FE7E3D-D9DC-4970-9916-200D1354459F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64FE7E3D-D9DC-4970-9916-200D1354459F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{29DD9F77-7934-4160-9689-AE6929D9DBD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{29DD9F77-7934-4160-9689-AE6929D9DBD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{29DD9F77-7934-4160-9689-AE6929D9DBD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{29DD9F77-7934-4160-9689-AE6929D9DBD4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{48DF228C-2FE3-4D68-A270-1BD5A8C80E78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{48DF228C-2FE3-4D68-A270-1BD5A8C80E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48DF228C-2FE3-4D68-A270-1BD5A8C80E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -53,14 +47,26 @@ Global
 		{CFA55325-7F7E-4EFB-A578-45A0E5887568}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFA55325-7F7E-4EFB-A578-45A0E5887568}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFA55325-7F7E-4EFB-A578-45A0E5887568}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E67B0E66-1D00-43A5-BA2B-9FF8A5E8FF6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E67B0E66-1D00-43A5-BA2B-9FF8A5E8FF6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E67B0E66-1D00-43A5-BA2B-9FF8A5E8FF6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E67B0E66-1D00-43A5-BA2B-9FF8A5E8FF6B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{46AEFCD1-05D7-4A20-BB1B-61681F1648A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{46AEFCD1-05D7-4A20-BB1B-61681F1648A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46AEFCD1-05D7-4A20-BB1B-61681F1648A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46AEFCD1-05D7-4A20-BB1B-61681F1648A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8427E657-3491-45BD-83E2-C24FE406C5D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8427E657-3491-45BD-83E2-C24FE406C5D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8427E657-3491-45BD-83E2-C24FE406C5D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8427E657-3491-45BD-83E2-C24FE406C5D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{515892BC-8CF8-4F62-ABC6-CEED8CA6DFDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{515892BC-8CF8-4F62-ABC6-CEED8CA6DFDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{515892BC-8CF8-4F62-ABC6-CEED8CA6DFDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{515892BC-8CF8-4F62-ABC6-CEED8CA6DFDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA7C7B4D-0D76-4606-8335-6C16806D0167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA7C7B4D-0D76-4606-8335-6C16806D0167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA7C7B4D-0D76-4606-8335-6C16806D0167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA7C7B4D-0D76-4606-8335-6C16806D0167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5A621EF-53A8-438B-98B0-61EDF8B73A7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5A621EF-53A8-438B-98B0-61EDF8B73A7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5A621EF-53A8-438B-98B0-61EDF8B73A7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5A621EF-53A8-438B-98B0-61EDF8B73A7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
