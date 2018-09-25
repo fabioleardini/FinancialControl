@@ -2,7 +2,7 @@
 
 namespace FinancialControl.Repository
 {
-    public class MongoContext : IMongoContext
+    public class MongoContext
     {
         public IMongoDatabase Database { get; }
 

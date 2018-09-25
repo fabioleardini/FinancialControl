@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialControl.Log", "Fin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialControl.Repository", "FinancialControl.Repository\FinancialControl.Repository.csproj", "{CFA55325-7F7E-4EFB-A578-45A0E5887568}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialControl.Test", "FinancialControl.Test\FinancialControl.Test.csproj", "{46AEFCD1-05D7-4A20-BB1B-61681F1648A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialControl.UnitTest", "FinancialControl.Test\FinancialControl.UnitTest.csproj", "{46AEFCD1-05D7-4A20-BB1B-61681F1648A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialControl.Business", "FinancialControl.Business\FinancialControl.Business.csproj", "{8427E657-3491-45BD-83E2-C24FE406C5D7}"
 EndProject
