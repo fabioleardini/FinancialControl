@@ -1,4 +1,4 @@
-﻿using FinancialControl.MapperExtensions;
+﻿using MapperExtensions;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using System;
@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace FinancialControl.Repository
+namespace Repository
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : class
     {

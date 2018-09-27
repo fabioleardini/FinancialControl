@@ -1,6 +1,6 @@
 ﻿using MongoDB.Driver;
 
-namespace FinancialControl.Repository
+namespace Repository
 {
     public class MongoContext
     {

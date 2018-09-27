@@ -1,7 +1,7 @@
-﻿using FinancialControl.Repository;
+﻿using Repository;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace FinancialControl.Kernel
+namespace Kernel
 {
     public static class Bootstrap
     {

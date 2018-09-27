@@ -13,6 +13,7 @@
     <Folder Include="Context\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MapperExtensions\FinancialControl.MapperExtensions.csproj" />
+    <ProjectReference Include="..\MapperExtensions\MapperExtensions.csproj" />
+    <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 </Project>

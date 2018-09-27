@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace FinancialControl.Repository
+﻿namespace Repository
 {
     public interface IContextFactory
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FinancialControl.Repository
+namespace Repository
 {
     public class ContextFactory : IContextFactory
     {

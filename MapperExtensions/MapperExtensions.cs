@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using AgileObjects.AgileMapper;
 
-namespace FinancialControl.MapperExtensions
+namespace MapperExtensions
 {
     public static class MapperExtensions
     {

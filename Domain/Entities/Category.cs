@@ -1,4 +1,4 @@
-namespace FinancialControl.Domain
+namespace Domain
 {
     public class Category : BaseNameId { }
 }
