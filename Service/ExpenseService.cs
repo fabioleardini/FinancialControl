@@ -1,21 +1,18 @@
 using System.Collections.Generic;
+using Business;
 using Domain;
-using Repository;
 
 namespace Service
 {
     public class ExpenseService : IExpenseService
     {
-        IExpenseRepository _expenseRepository;
+        readonly IExpenseBusiness _expenseBusiness;
 
-        public ExpenseService(IExpenseRepository expenseRepository)
+        public ExpenseService(IExpenseBusiness expenseBusiness)
         {
-            _expenseRepository = expenseRepository;
+            _expenseBusiness = expenseBusiness;
         }
 
-        public ICollection<Expense> List()
-        {
-            return null;
-        }
+        public ICollection<Expense> List() => _expenseBusiness.List();
     }
 }

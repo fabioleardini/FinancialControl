@@ -41,12 +41,12 @@ namespace Repository
             return Collection.InsertOneAsync(item);
         }
 
-        public void AddRange(IEnumerable<T> items)
+        public void AddRange(ICollection<T> items)
         {
             Collection.InsertMany(items);
         }
 
-        public Task AddRangeAsync(IEnumerable<T> items)
+        public Task AddRangeAsync(ICollection<T> items)
         {
             return Collection.InsertManyAsync(items);
         }
@@ -131,44 +131,44 @@ namespace Repository
             return Task.FromResult(FirstOrDefaultAsync(where).Map<TResult>());
         }
 
-        public IEnumerable<T> List()
+        public ICollection<T> List()
         {
             return Collection.Find(new BsonDocument()).ToList();
         }
 
-        public IEnumerable<T> List(Expression<Func<T, bool>> where)
+        public ICollection<T> List(Expression<Func<T, bool>> where)
         {
             return Collection.Find(where).ToList();
         }
 
-        public IEnumerable<TResult> List<TResult>()
+        public ICollection<TResult> List<TResult>()
         {
-            return List().Map<IEnumerable<TResult>>();
+            return List().Map<ICollection<TResult>>();
         }
 
-        public IEnumerable<TResult> List<TResult>(Expression<Func<T, bool>> where)
+        public ICollection<TResult> List<TResult>(Expression<Func<T, bool>> where)
         {
-            return List(where).Map<IEnumerable<TResult>>();
+            return List(where).Map<ICollection<TResult>>();
         }
 
-        public async Task<IEnumerable<T>> ListAsync(Expression<Func<T, bool>> where)
+        public async Task<ICollection<T>> ListAsync(Expression<Func<T, bool>> where)
         {
             return await Collection.Find(where).ToListAsync().ConfigureAwait(false);
         }
 
-        public async Task<IEnumerable<T>> ListAsync()
+        public async Task<ICollection<T>> ListAsync()
         {
             return await Collection.Find(new BsonDocument()).ToListAsync().ConfigureAwait(false);
         }
 
-        public Task<IEnumerable<TResult>> ListAsync<TResult>()
+        public Task<ICollection<TResult>> ListAsync<TResult>()
         {
-            return Task.FromResult(ListAsync().Map<IEnumerable<TResult>>());
+            return Task.FromResult(ListAsync().Map<ICollection<TResult>>());
         }
 
-        public Task<IEnumerable<TResult>> ListAsync<TResult>(Expression<Func<T, bool>> where)
+        public Task<ICollection<TResult>> ListAsync<TResult>(Expression<Func<T, bool>> where)
         {
-            return Task.FromResult(ListAsync(where).Map<IEnumerable<TResult>>());
+            return Task.FromResult(ListAsync(where).Map<ICollection<TResult>>());
         }
 
         public T Select(object key)
