@@ -6,5 +6,7 @@ namespace Business
     public interface IExpenseBusiness
     {
         ICollection<Expense> List();
+
+        void Add(Expense expense);
     }
 }

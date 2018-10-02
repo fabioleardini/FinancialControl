@@ -14,5 +14,7 @@ namespace Business
         }
 
         public ICollection<Expense> List() => _expenseRepository.List();
+
+        public void Add(Expense expense) => _expenseRepository.Add(expense);
     }
 }

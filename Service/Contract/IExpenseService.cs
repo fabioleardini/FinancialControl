@@ -6,5 +6,7 @@ namespace Service
     public interface IExpenseService
     {
         ICollection<Expense> List();
+
+        void Add(Expense expense);
     }
 }

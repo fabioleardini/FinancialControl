@@ -25,10 +25,7 @@ namespace Application
 
         // POST api/expense
         [HttpPost]
-        public void Post([FromBody]string value) 
-        {
-
-        }
+        public void Post([FromBody]Expense expense) => _expenseService.Add(expense);
 
         // PUT api/expense/5
         [HttpPut("{id}")]

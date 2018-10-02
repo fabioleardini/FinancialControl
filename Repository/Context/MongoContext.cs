@@ -6,7 +6,7 @@ namespace Repository
     {
         public IMongoDatabase Database { get; }
 
-        readonly string connectionString = "mongodb+srv://fabioleardini:mongodbFFlma6!!973634@cluster0-rnnjy.mongodb.net/test?retryWrites=true";
+        readonly string connectionString = "mongodb+srv://fabioleardini:mongodbFFlma6!!973634@cluster0-rnnjy.mongodb.net/FinancialControl?retryWrites=true";
 
         public MongoContext()
         {

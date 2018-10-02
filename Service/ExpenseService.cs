@@ -14,5 +14,7 @@ namespace Service
         }
 
         public ICollection<Expense> List() => _expenseBusiness.List();
+
+        public void Add(Expense expense) => _expenseBusiness.Add(expense);
     }
 }

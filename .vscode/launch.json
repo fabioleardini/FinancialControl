@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/FinancialControl/bin/Debug/netcoreapp2.1/FinancialControl.App.dll",
+            "program": "${workspaceFolder}/Application/bin/Debug/netcoreapp2.1/Application.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/FinancialControl",
+            "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart",
             "launchBrowser": {
