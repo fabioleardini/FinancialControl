@@ -10,10 +10,7 @@ namespace Application
     {
         readonly IExpenseService _expenseService;
 
-        public ExpenseController(IExpenseService expenseService)
-        {
-            _expenseService = expenseService;
-        }
+        public ExpenseController(IExpenseService expenseService) => _expenseService = expenseService;
 
         // GET: api/expense
         [HttpGet]
@@ -21,7 +18,7 @@ namespace Application
 
         // GET api/expense/5
         [HttpGet("{id}")]
-        public string Get(int id) => "Not Implemented!";
+        public Expense Get(int id) => _expenseService.Select(id);
 
         // POST api/expense
         [HttpPost]
@@ -29,16 +26,10 @@ namespace Application
 
         // PUT api/expense/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-
-        }
+        public void Put(int id, [FromBody]Expense expense) => _expenseService.Update(expense, id);
 
         // DELETE api/expense/5
         [HttpDelete("{id}")]
-        public void Delete(int id) 
-        {
-
-        }
+        public void Delete(int id) => _expenseService.Delete(id);
     }
 }

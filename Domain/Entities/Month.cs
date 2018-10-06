@@ -1,4 +1,7 @@
 ﻿namespace Domain
 {
-    public class Month : BaseNameId { }
+    public class Month 
+    {
+        public string Name { get; set; }
+    }
 }
