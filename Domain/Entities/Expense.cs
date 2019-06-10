@@ -10,6 +10,10 @@ namespace Domain
 
         public short Year { get; set; }
 
+        public Currency Currency { get; set; }
+
+        public decimal Value { get; set; }
+
         public string Note { get; set; }
      }
 }
