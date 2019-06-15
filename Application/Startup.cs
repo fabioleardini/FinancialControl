@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
 using Kernel;
+using CrossCutting;
 
 namespace Application
 {
@@ -32,6 +33,8 @@ namespace Application
                     Description = "A financial control system"
                 });
             });
+
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
 
             Bootstrapper.Configure(services);
         }

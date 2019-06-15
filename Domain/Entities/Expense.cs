@@ -1,3 +1,5 @@
+using System;
+
 namespace Domain
 {
     public class Expense : Entity
@@ -6,7 +8,9 @@ namespace Domain
 
         public Category Category { get; set; }
 
-        public Month Month { get; set; }
+        public DateTime ExpenseDate { get; set; }
+
+        public DateTime RegisterDate { get; set; }
 
         public short Year { get; set; }
 
