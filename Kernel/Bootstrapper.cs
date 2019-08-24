@@ -9,7 +9,6 @@ namespace Kernel
     {
         public static void Configure(IServiceCollection services)
         {
-
             // Service
             services.AddTransient<IExpenseService, ExpenseService>();
 
@@ -17,7 +16,7 @@ namespace Kernel
             services.AddTransient<IExpenseBusiness, ExpenseBusiness>();
 
             // Repository
-            services.AddTransient<IContextFactory, ContextFactory>();
+            services.AddTransient<IMongoContext, MongoContext>();
             services.AddTransient<IExpenseRepository, ExpenseRepository>();
         }
     }

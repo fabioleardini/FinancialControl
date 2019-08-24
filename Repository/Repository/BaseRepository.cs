@@ -10,24 +10,16 @@ namespace Repository
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
-        protected MongoContext _context;
-
-        protected IContextFactory _factoryBase
-        {
-            get;
-            private set;
-        }
+        private readonly IMongoContext _context;
 
         IMongoDatabase Database { get; }
 
         IMongoCollection<T> Collection { get; }
 
-        public MongoContext Context => _context ?? (_context = _factoryBase.GetContext());
-
-        public BaseRepository(IContextFactory factoryBase)
+        public BaseRepository(IMongoContext context)
         {
-            _factoryBase = factoryBase;
-            Database = Context.Database;
+            _context = context;
+            Database = _context.Database;
             Collection = Database.GetCollection<T>(typeof(T).Name);
         }
 
