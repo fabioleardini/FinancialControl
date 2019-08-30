@@ -8,6 +8,10 @@ namespace Domain
 
         public Category Category { get; set; }
 
+        public PaymentMethod PaymentMethod { get; set; }
+
+        public int Portion { get; set; }
+
         public DateTime ExpenseDate { get; set; }
 
         public DateTime RegisterDate { get; set; }

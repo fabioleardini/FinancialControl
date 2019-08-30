@@ -1,6 +1,6 @@
 namespace Domain
 {
-    public class Category : Entity
+    public class PaymentMethod : Entity
     {
         public string Name { get; set; }
     }
